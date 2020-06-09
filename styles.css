@@ -1,3 +1,7 @@
+body {
+	background-color: rgb(20, 23, 26);
+}
+
 ul {
 	list-style-type: none;
 }
@@ -13,27 +17,41 @@ ul {
 .header {
 	position: relative;
 	height: 150px;
-	border-bottom: 3px solid #778899;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items:flex-start;
+	background-color: #0B0D10;
+	box-shadow: 0 15px 35px rgba(0,0,0,0.5);
 }
 
 .login, .auth { /* КНОПКИ "РЕГИСТРАЦИЯ" И "ВХОД" */
-	width: 120px;
-	font-size: 18px;
-	border: 2px solid #778899;
-	border-radius: 25px;
+	width: 140px;
+	font-size: 22px;
 	padding: 5px;
 	text-align: center;
-	background-color: #778899;
+	background-color: #0B0D10;
 	margin: 25px 0;
+	transition: background 0.5s linear;
+	border-radius: 5px;
+	border: 2px solid #778899;
 }
 
 a#top {
 	text-decoration: none;
 	color: white;
+	font-weight: 600;
+}
+
+.login:hover{
+	background: linear-gradient(315deg,#ff0057,#e64a19);
+	border-radius: 5px;
+	transition-delay: 0.1s;
+}
+
+.auth:hover {
+	background: linear-gradient(315deg,#ff0057,#e64a19);
+	border-radius: 5px;
 }
 
 .logo { /*ЛОГОТИП САЙТА*/
@@ -44,6 +62,8 @@ a#top {
 .descriptionhead { /*ОПИСАНИЕ САЙТА*/
 	width: 800px;
 	margin-top: 12px;
+	color: #ff8901;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 }
 
 /*MAIN CONTENT*/
@@ -57,7 +77,8 @@ a#top {
 	position: absolute;
 	height: 100%;
 	width: 300px;
-	border-right: 3px solid #778899;
+	background-color: #1F2326;
+	box-shadow: 0 15px 35px rgba(0,0,0,0.5);
 }
 
 .menu {
@@ -67,17 +88,23 @@ a#top {
 .left {
 	margin-bottom: 40px;
 	margin-right: 30px;
-	border: 2px solid #778899;
-	border-radius: 25px;
+	border: 1px solid #181E23;
+	border-radius: 5px;
+	background-color: #181E23; 
 	padding: 5px;
 	text-align: center;
-	background-color: #778899;
 	font-size: 18px;
+	border: 2px solid #778899;
+}
+
+.left:hover {
+	background: linear-gradient(315deg,#ff0057,#e64a19);
 }
 
 a#left {
 	text-decoration: none;
 	color: white;
+	font-weight: 600;
 }
 
 .leftblock {
@@ -88,6 +115,9 @@ a#left {
 }
 
 #leftblock {
+	background-color: #181E23;
+	color: #ff8901;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 	width: 244px;
 	height: 444px;
 	resize: none;
@@ -106,21 +136,40 @@ a#left {
 }
 
 .blog { /*МИНИАТЮРЫ БЛОГОВ*/
-	height: 400px;
+	height: 410px;
 	width: 400px;
-	border: 1px solid #778899;
+	border-radius: 5px;
 	margin: 40px 40px 0px 40px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	box-shadow: 0 15px 35px rgba(0,0,0,0.5);
 	text-align: center;
 	overflow-x:hidden;
+	background-color: #080C0F;
+	color: white;
 }
 
-a#pages { /*кНОПКИ ПЕРЕКЛЮЧЕНИЯ СТРАНИЦ*/
+.blog:hover {
+	background-color: #1F2326;
+}
+
+a#prev, a#next { /*КНОПКИ ПЕРЕКЛЮЧЕНИЯ СТРАНИЦ*/
 	padding: 10px;
 	text-decoration: none;
 	text-align: center;
-	color: black;
+	color: white;
 	font-size: 20px;
+	font-weight: 600;
+	background-color: #040506;
+	border-radius: 10px;
+	transition: background-color 0.6s;
+	border: 2px solid #778899;
+}
+
+a#prev:hover {
+	background: linear-gradient(315deg,#ff0057,#e64a19);
+}
+
+a#next:hover {
+	background: linear-gradient(315deg,#ff0057,#e64a19);
 }
 
 .blogimg { /*КАРТИНКА БЛОГА*/
@@ -130,13 +179,32 @@ a#pages { /*кНОПКИ ПЕРЕКЛЮЧЕНИЯ СТРАНИЦ*/
 }
 
 a#read {
-	text-decoration: underline;
-	color: black;
+	text-decoration: none;
+	color: white;
 	font-size: 18px;
 	vertical-align: text-bottom;
+	font-weight: 600;
+	transition: color 0.5s;
+	border: 2px solid #778899;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: #1F2326;
+}
+
+a#read:hover {
+	background: linear-gradient(315deg,#ff0057,#e64a19);
+}
+
+.blogtext {
+	font-size: 16px;
+	font-weight: 500;
+	color: #ff8901;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 }
 
 .description { /*ОПИСАНИЕ БЛОГА*/
+	color: #ff8901;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 	text-align: center;
 	height: 9%;
 	width: 100%;
@@ -148,11 +216,12 @@ a#read {
 	position: relative;
 	margin-bottom: 10px;
 	height: 150px;
-	border-top: 3px solid #778899;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	background-color: #0B0D10;
 	align-items: flex-start;
+	box-shadow: 0 15px 35px rgba(0,0,0,0.5);
 }
 
 .about, .contacts, .xz { /*НИЖНИЕ КНОПКИ*/
@@ -162,13 +231,19 @@ a#read {
 	border-radius: 25px;
 	padding: 5px;
 	text-align: center;
-	background-color: #778899;
+	background-color: #1F2326;
+	border-radius: 5px;
 	margin: 20px 0;
+}
+
+.about:hover, .contacts:hover, .xz:hover {
+	background: linear-gradient(315deg,#ff0057,#e64a19);
 }
 
 a#bot {
 	text-decoration: none;
 	color: white;
+	font-weight: 600;
 }
 
 .bottom { /*НИЖНЯЯ ЛИНИЯ*/
@@ -180,4 +255,10 @@ a#bot {
 	text-align: center;
 	color: white;
 	font-size: 18px;
+	background-color: #040506;
+}
+
+.bottom p {
+	color: #ff8901;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 }

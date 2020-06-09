@@ -53,7 +53,7 @@
           <p class="blogtext">Дата добавления:</p>
           <p class="blogtext">Автор</p>
           <img class="blogimg" src="img/sosiska.jpg">
-          <p class="description">Ебанашка...</p>
+          <p class="description">Скорбим всем селом</p>
           <a id="read" href="#">Читать</a>
         </div>
         <div class="blog">
@@ -64,8 +64,8 @@
           <a id="read" href="#">Читать</a>
         </div>
         <div>
-          <a id ="pages" href="#">Назад</a>
-          <a id ="pages" href="#">Вперед</a>
+          <a id ="prev" href="#">Назад</a>
+          <a id ="next" href="#">Вперед</a>
         </div>
       </div>
      </div>
