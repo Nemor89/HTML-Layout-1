@@ -1,0 +1,84 @@
+.main {
+	width: 1500px;
+	margin: auto;
+}
+
+.header {
+	position: relative;
+	height: 150px;
+	border-bottom: 3px solid #778899;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items:flex-start;
+}
+
+.footer {
+	position: relative;
+	margin-bottom: 10px;
+	height: 150px;
+	border-top: 3px solid #778899;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.content {
+	margin-bottom: 10px;
+	height: 1000px;
+}
+
+/* КНОПКИ "РЕГИСТРАЦИЯ" И "ВХОД" */
+.login, .auth {
+	width: 120px;
+	font-size: 18px;
+	border: 2px solid #778899;
+	border-radius: 25px;
+	padding: 5px;
+	text-align: center;
+	background-color: #778899;
+	margin: 25px 0;
+}
+
+.logo {
+	height: 180px;
+	width: 270px;
+}
+
+.description {
+	width: 800px;
+	margin-top: 12px;
+}
+
+a#top {
+	text-decoration: none;
+	color: white;
+}
+
+a#bot {
+	text-decoration: none;
+	color: white;
+}
+
+.about, .contacts, .xz {
+	width: 120px;
+	font-size: 18px;
+	border: 2px solid #778899;
+	border-radius: 25px;
+	padding: 5px;
+	text-align: center;
+	background-color: #778899;
+	margin: 20px 0;
+}
+
+.bottom {
+	position: absolute;
+	align-self: flex-end;
+	height: 75px;
+	width: 100%;
+	background-color: #778899;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+}
