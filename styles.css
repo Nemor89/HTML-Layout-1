@@ -1,5 +1,60 @@
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(9px);
+    transform: translateX(9px);
+  }
+  30% {
+    -webkit-transform: translateX(-9px);
+    transform: translateX(-9px);
+  }
+  40% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  50% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  65% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(9px);
+    transform: translateX(9px);
+  }
+  30% {
+    -webkit-transform: translateX(-9px);
+    transform: translateX(-9px);
+  }
+  40% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  50% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  65% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
 body {
-	background-color: rgb(20, 23, 26);
+	margin: 0;
+	background-color: #1F2326;
 }
 
 ul {
@@ -27,14 +82,14 @@ ul {
 
 .login, .auth { /* КНОПКИ "РЕГИСТРАЦИЯ" И "ВХОД" */
 	width: 140px;
-	font-size: 22px;
+	font-family: "Roboto Condensed",sans-serif;
+	font-size: 20px;
 	padding: 5px;
 	text-align: center;
-	background-color: #0B0D10;
+	background: linear-gradient(315deg,#ff0057,#e64a19);
 	margin: 25px 0;
-	transition: background 0.5s linear;
 	border-radius: 5px;
-	border: 2px solid #778899;
+	border: 1px solid #1F2326;
 }
 
 a#top {
@@ -44,25 +99,33 @@ a#top {
 }
 
 .login:hover{
-	background: linear-gradient(315deg,#ff0057,#e64a19);
+	background: linear-gradient(315deg,#e91e63,#5d02ff);
 	border-radius: 5px;
-	transition-delay: 0.1s;
+	-webkit-animation: swing 0.6s ease;
+  	animation: swing 0.6s ease;
+   	-webkit-animation-iteration-count: 1;
+   	animation-iteration-count: 1;
 }
 
 .auth:hover {
-	background: linear-gradient(315deg,#ff0057,#e64a19);
+	background: linear-gradient(315deg,#e91e63,#5d02ff);
 	border-radius: 5px;
+	-webkit-animation: swing 0.6s ease;
+  	animation: swing 0.6s ease;
+   	-webkit-animation-iteration-count: 1;
+   	animation-iteration-count: 1;
 }
 
 .logo { /*ЛОГОТИП САЙТА*/
-	height: 180px;
+	height: 150px;
 	width: 270px;
 }
 
 .descriptionhead { /*ОПИСАНИЕ САЙТА*/
 	width: 800px;
 	margin-top: 12px;
-	color: #ff8901;
+	font-family: "Roboto",sans-serif;
+	color: #C1C1C1;
 	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 }
 
@@ -70,15 +133,15 @@ a#top {
 .content {
 	overflow-x:hidden;
 	position: relative;
-	height: 1000px;
+	height: 1100px;
 }
 
 .leftmenue { /*ЛЕВОЕ МЕНЮ*/
 	position: absolute;
 	height: 100%;
 	width: 300px;
-	background-color: #1F2326;
-	box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+	background-color: #181E23;
+	box-shadow: 0 0 8px 1px rgba(0,0,0,.54);
 }
 
 .menu {
@@ -88,17 +151,20 @@ a#top {
 .left {
 	margin-bottom: 40px;
 	margin-right: 30px;
-	border: 1px solid #181E23;
 	border-radius: 5px;
-	background-color: #181E23; 
+	background: linear-gradient(315deg,#ff0057,#e64a19);
 	padding: 5px;
 	text-align: center;
 	font-size: 18px;
-	border: 2px solid #778899;
+	font-family: "Roboto Condensed",sans-serif;
 }
 
 .left:hover {
-	background: linear-gradient(315deg,#ff0057,#e64a19);
+	background: linear-gradient(315deg,#e91e63,#5d02ff);
+	-webkit-animation: swing 0.6s ease;
+  	animation: swing 0.6s ease;
+   	-webkit-animation-iteration-count: 1;
+   	animation-iteration-count: 1;
 }
 
 a#left {
@@ -109,17 +175,17 @@ a#left {
 
 .leftblock {
 	width: 250px;
-	height: 450px;
+	height: 250px;
 	border: 2px solid #778899;
 	margin: auto;
 }
 
 #leftblock {
 	background-color: #181E23;
-	color: #ff8901;
+	color: #C1C1C1;
 	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 	width: 244px;
-	height: 444px;
+	height: 244px;
 	resize: none;
 }
 
@@ -135,11 +201,10 @@ a#left {
 
 }
 
-.blog { /*МИНИАТЮРЫ БЛОГОВ*/
+.blog1, .blog2, .blog3, .blog4 { /*МИНИАТЮРЫ БЛОГОВ*/
 	height: 410px;
 	width: 400px;
 	border-radius: 5px;
-	margin: 40px 40px 0px 40px;
 	box-shadow: 0 15px 35px rgba(0,0,0,0.5);
 	text-align: center;
 	overflow-x:hidden;
@@ -147,29 +212,27 @@ a#left {
 	color: white;
 }
 
-.blog:hover {
-	background-color: #1F2326;
+.blog1, .blog2 {
+	margin-top: 50px;
+	margin-bottom: -40px;
 }
 
-a#prev, a#next { /*КНОПКИ ПЕРЕКЛЮЧЕНИЯ СТРАНИЦ*/
+.blog3, .blog4 {
+	margin-top: -40px;
+	margin-bottom: -30px;
+}
+
+.blog1:hover, .blog2:hover, .blog3:hover, .blog4:hover {
+	background-color: #181E23;
+	-webkit-transform: scale(1.1);
+  	-ms-transform: scale(1.1);
+  	transform: scale(1.1);
+}
+
+.blog1:hover a#read, .blog2:hover a#read, .blog3:hover a#read, .blog4:hover a#read {
 	padding: 10px;
-	text-decoration: none;
-	text-align: center;
-	color: white;
-	font-size: 20px;
-	font-weight: 600;
-	background-color: #040506;
-	border-radius: 10px;
-	transition: background-color 0.6s;
-	border: 2px solid #778899;
-}
-
-a#prev:hover {
-	background: linear-gradient(315deg,#ff0057,#e64a19);
-}
-
-a#next:hover {
-	background: linear-gradient(315deg,#ff0057,#e64a19);
+	padding-top: 12px;
+	/*margin-bottom: 5px;*/
 }
 
 .blogimg { /*КАРТИНКА БЛОГА*/
@@ -181,40 +244,82 @@ a#next:hover {
 a#read {
 	text-decoration: none;
 	color: white;
+	font-family: "Roboto Condensed",sans-serif;
 	font-size: 18px;
 	vertical-align: text-bottom;
 	font-weight: 600;
 	transition: color 0.5s;
-	border: 2px solid #778899;
 	border-radius: 5px;
 	padding: 5px;
-	background-color: #1F2326;
-}
-
-a#read:hover {
 	background: linear-gradient(315deg,#ff0057,#e64a19);
 }
 
+a#read:hover {
+	background: linear-gradient(315deg,#e91e63,#5d02ff);
+}
+
 .blogtext {
+	font-family: "Roboto",sans-serif;
 	font-size: 16px;
 	font-weight: 500;
-	color: #ff8901;
+	color: #C1C1C1;
 	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 }
 
 .description { /*ОПИСАНИЕ БЛОГА*/
-	color: #ff8901;
+	font-family: "Roboto",sans-serif;
+	color: #C1C1C1;
 	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 	text-align: center;
 	height: 9%;
 	width: 100%;
 }
 
+a#prev, a#next { /*КНОПКИ ПЕРЕКЛЮЧЕНИЯ СТРАНИЦ*/
+	position: absolute;
+	width: 100px;
+	padding: 5px;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	font-family: "Roboto Condensed",sans-serif;
+	font-weight: 600;
+	background: linear-gradient(315deg,#ff0057,#e64a19);
+	border-radius: 5px;
+	margin-bottom: 10px;
+	margin-top: 1020px;
+	box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+a#prev {
+	margin-left: -70px;
+}
+
+a#next {
+	margin-left: 70px;
+}
+
+a#prev:hover {
+	background: linear-gradient(315deg,#e91e63,#5d02ff);
+	-webkit-animation: swing 0.6s ease;
+  	animation: swing 0.6s ease;
+   	-webkit-animation-iteration-count: 1;
+   	animation-iteration-count: 1;
+}
+
+a#next:hover {
+	background: linear-gradient(315deg,#e91e63,#5d02ff);
+	-webkit-animation: swing 0.6s ease;
+  	animation: swing 0.6s ease;
+   	-webkit-animation-iteration-count: 1;
+   	animation-iteration-count: 1;
+}
+
 /*FOOTER*/
 .footer {
 	overflow-x:hidden;
 	position: relative;
-	margin-bottom: 10px;
 	height: 150px;
 	display: flex;
 	flex-direction: row;
@@ -226,18 +331,22 @@ a#read:hover {
 
 .about, .contacts, .xz { /*НИЖНИЕ КНОПКИ*/
 	width: 120px;
+	font-family: "Roboto Condensed",sans-serif;
 	font-size: 18px;
-	border: 2px solid #778899;
 	border-radius: 25px;
 	padding: 5px;
 	text-align: center;
-	background-color: #1F2326;
+	background: linear-gradient(315deg,#ff0057,#e64a19);
 	border-radius: 5px;
 	margin: 20px 0;
 }
 
 .about:hover, .contacts:hover, .xz:hover {
-	background: linear-gradient(315deg,#ff0057,#e64a19);
+	background: linear-gradient(315deg,#e91e63,#5d02ff);
+	-webkit-animation: swing 0.6s ease;
+  	animation: swing 0.6s ease;
+   	-webkit-animation-iteration-count: 1;
+   	animation-iteration-count: 1;
 }
 
 a#bot {
@@ -259,6 +368,6 @@ a#bot {
 }
 
 .bottom p {
-	color: #ff8901;
+	color: #C1C1C1;
 	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 }

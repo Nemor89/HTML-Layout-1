@@ -10,7 +10,7 @@
     <header>
       <div class="header">
         <div>
-          <img class ="logo" src="img/php-1.svg">
+          <img class ="logo" src="img/php_PNG5.png">
         </div>
         <div class="descriptionhead">
           <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
@@ -35,38 +35,36 @@
         <div class="leftblock"><textarea id="leftblock">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea></div>
       </div>
       <div class="blogs">
-        <div class="blog">
+        <div class="blog1" id="blog1">
           <p class="blogtext">Дата добавления: 2 000 лет до нашей эры</p>
           <p class="blogtext">Автор: Профессионал</p>
           <img class="blogimg" src="img/energy.jpg">
           <p class="description">Как выпить 6 энергетиков подряд и не сдохнуть? Ответ профессионала</p>
           <a id="read" href="#">Читать</a>
         </div>
-        <div class="blog">
+        <div class="blog2" id="blog2">
           <p class="blogtext">Дата добавления: 09.06.2020 14:54</p>
           <p class="blogtext">Автор: Nemor</p>
           <img class="blogimg" src="img/grust.jpg">
           <p class="description">Кати разрушают судьбы</p>
           <a id="read" href="#">Читать</a>
         </div>
-        <div class="blog">
+        <div class="blog3" id="blog3">
           <p class="blogtext">Дата добавления:</p>
           <p class="blogtext">Автор</p>
           <img class="blogimg" src="img/sosiska.jpg">
           <p class="description">Скорбим всем селом</p>
           <a id="read" href="#">Читать</a>
         </div>
-        <div class="blog">
+        <div class="blog4" id="blog4">
           <p class="blogtext">Дата добавления:</p>
           <p class="blogtext">Автор</p>
           <img class="blogimg" src="img/zasekundu.jpg">
           <p class="description">За секунду до...</p>
           <a id="read" href="#">Читать</a>
         </div>
-        <div>
-          <a id ="prev" href="#">Назад</a>
-          <a id ="next" href="#">Вперед</a>
-        </div>
+        <a id ="prev" href="#">Сюда</a>
+        <a id ="next" href="#">Туда</a>
       </div>
      </div>
    </main>
