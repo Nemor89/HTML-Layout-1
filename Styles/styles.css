@@ -124,13 +124,15 @@ a#top {
 .descriptionhead { /*ОПИСАНИЕ САЙТА*/
 	width: 800px;
 	margin-top: 12px;
+	text-align: center;
 	font-family: "Roboto",sans-serif;
+	line-height: 1.5;
 	color: #C1C1C1;
 	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 }
 
 /*MAIN CONTENT*/
-.content {
+.maincontent {
 	overflow-x:hidden;
 	position: relative;
 	height: 1100px;
@@ -198,7 +200,6 @@ a#left {
 	height: 100%;
 	width: 1000px;
 	margin-left: 400px;
-
 }
 
 .blog1, .blog2, .blog3, .blog4 { /*МИНИАТЮРЫ БЛОГОВ*/
@@ -329,11 +330,10 @@ a#next:hover {
 	box-shadow: 0 15px 35px rgba(0,0,0,0.5);
 }
 
-.about, .contacts, .xz { /*НИЖНИЕ КНОПКИ*/
+.botbuttons { /*НИЖНИЕ КНОПКИ*/
 	width: 120px;
 	font-family: "Roboto Condensed",sans-serif;
 	font-size: 18px;
-	border-radius: 25px;
 	padding: 5px;
 	text-align: center;
 	background: linear-gradient(315deg,#ff0057,#e64a19);
@@ -341,7 +341,7 @@ a#next:hover {
 	margin: 20px 0;
 }
 
-.about:hover, .contacts:hover, .xz:hover {
+.botbuttons:hover{
 	background: linear-gradient(315deg,#e91e63,#5d02ff);
 	-webkit-animation: swing 0.6s ease;
   	animation: swing 0.6s ease;
@@ -370,4 +370,87 @@ a#bot {
 .bottom p {
 	color: #C1C1C1;
 	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+
+.content { /*ОБЛАСТЬ КОНТЕНТА*/
+	margin-top: 100px;
+	margin-left: 400px;
+}
+
+.about { /*СТРАНИЦА О САЙТЕ*/
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
+	font-family: "Roboto Condensed",sans-serif;
+	text-align: center;
+}
+
+.regform {
+	text-align: center;
+	width: 500px;
+	padding: 20px;
+	position: absolute;
+	top: 5%;
+	left: 40%;
+	font-family: "Roboto Condensed",sans-serif;
+}
+
+.regform h1 {
+	color: white;
+	font-family: "Roboto Condensed",sans-serif;
+	font-weight: 600;
+	font-size: 40px;
+}
+
+.reg {
+	display: block;
+	width: 100%;
+	padding: 0 16px;
+	height: 50px;
+	text-align: center;
+	box-sizing: border-box;
+	margin-bottom: 40px;
+	border: none;
+	border-bottom: 3px solid #EE0C44;
+	background-color: #1F2326;
+	color: white;
+}
+
+.setavatar {
+	opacity: 1;
+	display: inline-block;
+	width: 100%;
+	padding: 0 16px;
+	height: 50px;
+	text-align: center;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 3px solid #EE0C44;
+}
+
+input:focus {
+	outline:none;
+	border-bottom: 3px solid #650AF2;
+}
+
+.regbtn {
+	width: 120px;
+	font-family: "Roboto Condensed",sans-serif;
+	font-size: 18px;
+	padding: 5px;
+	text-align: center;
+	background: linear-gradient(315deg,#ff0057,#e64a19);
+	border-radius: 5px;
+	margin: 20px 0;
+	color: white;
+	border: none;
+}
+
+.regbtn:hover {
+	background: linear-gradient(315deg,#e91e63,#5d02ff);
+	-webkit-animation: swing 0.6s ease;
+  	animation: swing 0.6s ease;
+   	-webkit-animation-iteration-count: 1;
+   	animation-iteration-count: 1;
+   	cursor: pointer;
 }

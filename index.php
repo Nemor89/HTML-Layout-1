@@ -2,38 +2,19 @@
 <html>
  <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
   <title>Главная страница</title>
  </head>
  <body>
   <div class="main">
-    <header>
-      <div class="header">
-        <div>
-          <img class ="logo" src="img/php_PNG5.png">
-        </div>
-        <div class="descriptionhead">
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
-        </div>
-        <div>
-          <div class="auth"><a id ="top" href ="#">Регистрация</a></div>
-          <div class="login"><a id ="top" href ="#">Войти</a></div>
-        </div>
-      </div>
-   </header>
+    <?php
+    require_once "inc/header.php"
+    ?>
    <main>
-     <div class="content">
-      <div class="leftmenue">
-        <ul class="menu">
-          <li class="left"><a id ="left" href = "#">Категории</a></li>
-          <li class="left"><a id ="left" href = "#">Популярное</a></li>
-          <li class="left"><a id ="left" href = "#">Новое</a></li>
-          <li class="left"><a id ="left" href = "#">Блабла</a></li>
-          <li class="left"><a id ="left" href = "#">Блабла</a></li>
-          <li class="left"><a id ="left" href = "#">Блабла</a></li>
-        </ul>
-        <div class="leftblock"><textarea id="leftblock">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea></div>
-      </div>
+     <div class="maincontent">
+      <?php
+        require_once "inc/leftmenu.php";
+      ?>
       <div class="blogs">
         <div class="blog1" id="blog1">
           <p class="blogtext">Дата добавления: 2 000 лет до нашей эры</p>
@@ -68,14 +49,9 @@
       </div>
      </div>
    </main>
-   <footer>
-     <div class="footer">
-       <div class="about"><a id ="bot" href="#">О сайте</a></div>
-       <div class="contacts"><a id ="bot" href="#">Контакты</a></div>
-       <div class="xz"><a id ="bot" href="#">Блабла</a></div> 
-       <div class="bottom"><p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua &copy</p></div>
-     </div>
-   </footer>
+   <?php
+    require_once "inc/footer.php";
+   ?>
   </div>
  </body>
 </html>
