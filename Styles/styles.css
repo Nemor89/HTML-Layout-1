@@ -52,6 +52,21 @@
   }
 }
 
+html::-webkit-scrollbar{
+    width: 10px;
+    background-color: #1F2326;
+}
+
+#leftblock::-webkit-scrollbar {
+    width: 10px;
+    background-color: #181E23;
+}
+
+html::-webkit-scrollbar-thumb, #leftblock::-webkit-scrollbar-thumb {
+   background: linear-gradient(315deg,#ff0057,#e64a19);
+   border-radius: 10px;
+}
+
 body {
 	margin: 0;
 	background-color: #1F2326;
@@ -269,19 +284,14 @@ a#left {
 	font-weight: 600;
 }
 
-.leftblock {
-	width: 250px;
-	height: 250px;
-	border: 2px solid #778899;
-	margin: auto;
-}
-
 #leftblock {
+	margin-left: 30px;
+	border: none;
 	background-color: #181E23;
 	color: #C1C1C1;
 	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 	width: 244px;
-	height: 244px;
+	height: 360px;
 	resize: none;
 }
 
@@ -566,7 +576,7 @@ svg circle:nth-child(2) {
 
 .card:hover .percent .number h2 {
 	color: #650AF2;
-	font-size: 50px;
+	font-size: 60px;
 }
 
 .percent .number h2 span {
