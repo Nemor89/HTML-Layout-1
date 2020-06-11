@@ -9,7 +9,7 @@
  <body>
   <div class="main">
     <?php
-    require_once "inc/header.php"
+    require_once "inc/header.php";
     ?>
    <main>
      <div class="maincontent">
