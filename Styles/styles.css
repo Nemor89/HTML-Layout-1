@@ -67,7 +67,7 @@ html::-webkit-scrollbar{
     background-color: #0B0D10;
 }
 
-html::-webkit-scrollbar-thumb, #leftblock::-webkit-scrollbar-thumb, .reviewarea::-webkit-scrollbar-thumb, {
+html::-webkit-scrollbar-thumb, #leftblock::-webkit-scrollbar-thumb, .reviewarea::-webkit-scrollbar-thumb {
    background: linear-gradient(315deg,#ff0057,#e64a19);
    border-radius: 10px;
 }
