@@ -607,6 +607,7 @@ svg circle:nth-child(2) {
 }
 
 .regform h1 {
+	text-align: center;
 	color: white;
 	font-family: "Roboto Condensed",sans-serif;
 	font-weight: 600;
