@@ -3,7 +3,7 @@
  <head>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
-  <title>О сайте</title>
+  <title>Отзыв</title>
  </head>
  <body>
   <div class="main">
@@ -16,9 +16,11 @@
         require_once "inc/leftmenu.php";
       ?>
       <div class="content">
-        <h1 class="about">Исходники:</h1>
-        <p class="about2">1. Верстка: <a id="source" target="_blank" href="https://github.com/Nemor89/HTML-Layout-1">https://github.com/Nemor89/HTML-Layout-1</a></p>
-        <p class="about2">2. Проект на чистом PHP: <a id="source" target="_blank" href="https://github.com/Nemor89/BasePHPProject">https://github.com/Nemor89/BasePHPProject</a></p>
+        <h1 class="about">Оставьте свой отзыв о работе сайта</h1>
+        <form class="review" method="post">
+        <textarea class="reviewarea" name="review"></textarea>
+        <input class="reviewsubmit"	type="submit" name="reviewsubmit">
+        </form>
       </div>
      </div>
    </main>
